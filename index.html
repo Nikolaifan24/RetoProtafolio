@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/flexbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -17,26 +18,32 @@
     <div class="tudo">
     <section class="menu">
         <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Fulana de Tal</h3>
+            <div class="container">
+                
+                <img src="assets\vector.png">
+                <h3 class="menu__title">Nikolai Steven Fandiño López</h3>
+                
+                <nav class="menu-nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                        <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                        <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
+                    </ul>
+                    <!-- <li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li> -->
+                </nav>
+        </div>
+            
         </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>
-        </nav>
+        
     </section>
 
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
+           
             <div class="title__container">
                 <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo paginas web</h2>
                 <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
@@ -47,7 +54,9 @@
                     <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
                     <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
                 </ul>
+                
             </div>
+            <img class="title__profile" src="assets\profile.png">
         </div>
     </section>
     
@@ -65,7 +74,7 @@
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
         <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
+            <div class="skills__container">
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"><img src="assets\htlm.png"></li>
@@ -192,7 +201,7 @@
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
         <h2 class="experience__section__title" >Experiencia Profissional</h2>
-        <div class="experiencie__box">
+        <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\decod_print.png">
             <div class="experience__info"
@@ -206,7 +215,7 @@
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\forca_print.png">
             <div class="experience__info"
@@ -223,7 +232,7 @@
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\secretcode_print.png">
-            <div class="experience__info-container"
+            <div class="experience__info"
                 <h2 class="experience__title">Encriptador de texto</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
@@ -236,7 +245,7 @@
 
         <div class="experience__box">
             <img class="experience__img" src="assets\forca2_print.png">
-            <div class="experience__info-container"
+            <div class="experience__info"
             <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
